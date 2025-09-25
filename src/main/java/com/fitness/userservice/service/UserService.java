@@ -1,7 +1,6 @@
 package com.fitness.userservice.service;
 
 import org.springframework.stereotype.Service;
-
 import com.fitness.userservice.dto.RegisterRequest;
 import com.fitness.userservice.dto.UserResponse;
 import com.fitness.userservice.models.User;
