@@ -26,6 +26,7 @@ public class UserService {
 
         User savedUser = userRepository.save(user);
         UserResponse response = new UserResponse();
+        response.setId(savedUser.getId());
         response.setEmail(savedUser.getEmail());
         response.setFirstName(savedUser.getFirstName());
         response.setLastName(savedUser.getLastName());
@@ -49,6 +50,7 @@ public class UserService {
     }
 
     public Boolean existByUserId(String id) {
+        System.out.println(id);
         return userRepository.existsById(id);
     }
 
